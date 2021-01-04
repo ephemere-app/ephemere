@@ -1,0 +1,93 @@
+{
+  "name": "@ephemere/web",
+  "version": "0.0.0",
+  "description": "Open a secure line",
+  "author": {
+    "name": "Romain Clement",
+    "email": "contact@romain-clement.net",
+    "url": "https://romain-clement.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ephemere-app/ephemere.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ephemere-app/ephemere/issues"
+  },
+  "homepage": "https://github.com/ephemere-app/ephemere#readme",
+  "private": true,
+  "license": "AGPL-3.0",
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "build:analyze": "nuxt-ts build --analyze",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "test": "jest",
+    "test:ci": "jest --ci"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/pwa": "^3.3.3",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sentry": "^4.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.14.12",
+    "nuxt-buefy": "^0.4.4",
+    "nuxt-chiffre": "^0.3.0",
+    "nuxt-i18n": "^6.16.0",
+    "socket.io": "^3.0.4",
+    "socket.io-client": "^3.0.4",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
+    "uuid": "^8.3.2",
+    "vue-clipboard2": "^0.3.1",
+    "vuelidate": "^0.7.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@types/faker": "^5.1.5",
+    "@types/jest": "^26.0.19",
+    "@types/socket.io": "^2.1.12",
+    "@types/socket.io-client": "^1.4.34",
+    "@types/uuid": "^8.3.0",
+    "@types/vuelidate": "^0.7.13",
+    "@vue/test-utils": "^1.1.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "faker": "^5.1.0",
+    "flush-promises": "^1.0.2",
+    "husky": "^4.3.6",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "node-sass": "^5.0.0",
+    "nuxt-cname-module": "^1.1.1",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.0",
+    "ts-jest": "^26.4.4",
+    "vue-jest": "^3.0.7"
+  },
+  "engines": {
+    "node": "^12.20.0",
+    "npm": "^6.14.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

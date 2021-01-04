@@ -1,0 +1,14 @@
+// brand colors
+
+// bulma initial variables
+
+// bulma derived variables
+$custom-colors: ();
+
+// bulma component variables
+$dimensions: 16 24 32 48 64 96 128 256 512;
+$footer-padding: 3rem 1.5rem 3rem;
+
+// bulma and buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
