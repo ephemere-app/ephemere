@@ -5,6 +5,8 @@
         <div class="container">
           <div class="columns">
             <div class="column is-one-quarter">
+              <logo size="64" />
+              <br />
               <user-list />
             </div>
 
@@ -26,12 +28,14 @@
 <script>
 import Vue from 'vue'
 import { mapActions, mapState } from 'vuex'
+import Logo from '~/components/Logo.vue'
 import UserList from '~/components/UserList.vue'
 import JoinLink from '~/components/JoinLink.vue'
 import Chat from '~/components/Chat.vue'
 
 export default Vue.extend({
   components: {
+    Logo,
     UserList,
     JoinLink,
     Chat,
