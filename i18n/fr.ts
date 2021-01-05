@@ -9,7 +9,7 @@ export default {
     powered: 'Propulsé par {nuxt}, {socketio}, {bulma} et {fontawesome}',
     e2ee: 'Données protégées par chiffrement bout-en-bout avec {tweetnacljs}',
     analytics: `Analyse d'utilisation respectueuse de la vie-privée grâce à {chiffre}`,
-    website: 'Ce site-web est ouvert sous licence {license}',
+    website: 'Cette application web est ouverte sous licence {license}',
     copyright: {
       text: 'Tous droits réservés',
       start: '2021',
@@ -32,11 +32,39 @@ export default {
     backToHome: `Retour à l'accueil`,
   },
 
-  home: {
+  hero: {
     title: 'Ephemere',
-    subtitle: 'Open a secure line',
-    newRoom: 'New room',
-    tagline: `End-to-end encrypted and ephemeral instant messaging app, where messages are never stored server-side and only resides within the user's app.`,
+    subtitle: 'Ouvrez une ligne sécurisée',
+    newRoom: 'Nouveau salon',
+    tagline: `Messagerie instantanée chiffrée bout-en-bout et éphémère, où les messages ne sont jamais stockés côté serveur et restent uniquement dans l'application utilisateur.`,
+  },
+
+  features: {
+    messaging: {
+      title: 'Messagerie',
+      text: `Déjà eu besoin de transmettre une information sensible simplement à un collègue ou un ami ?
+      Créez un salon sécurisé et partagez simplement le lien.
+      Tous les messages sont synchronisés en temps-réel et en pair-à-pair.
+      Les serveurs de synchronisation ne garderont aucune donnée, ils assurent seulement la transmission.
+      Propulsé par {socketio}.`,
+    },
+    privacy: {
+      title: 'Vie privée',
+      text: `Tous les dessins et messages instantanés sont envoyés chiffrés bout-en-bout à travers le réseau,
+      en utilisant la "cryptographie authentifiée à clé-secrète" (XSalsa20-Poly1305).
+      En d'autres termes, les serveurs de synchronisation ne pourront jamais voir vos données,
+      même lors de leur transmission. Propulsé par {tweetnacljs}.`,
+    },
+    oss: {
+      title: 'Open-Source',
+      text: `Nous croyons fortement que la transparence va de pair avec le respect de la vie privée,
+      c'est pourquoi cette application est un logiciel libre et ouvert (open-source) sous
+      licence {license}, disponible publiquement sur {repository}.`,
+    },
+    suggestions: {
+      title: 'Suggestions',
+      text: `Vous avez trouvé un bug ? Une fonctionnalité est manquante ? Ouvrez un ticket et/ou contribuez sur {repository}.`,
+    },
   },
 
   join: {

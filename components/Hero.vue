@@ -10,11 +10,15 @@
               <br />
 
               <p class="title">
-                {{ $t('home.title') }}
+                {{ $t('hero.title') }}
               </p>
 
               <p class="subtitle">
-                {{ $t('home.subtitle') }}
+                {{ $t('hero.subtitle') }}
+              </p>
+
+              <p>
+                {{ $t('hero.tagline') }}
               </p>
             </div>
 
@@ -35,7 +39,7 @@
                 tag="nuxt-link"
                 outlined
               >
-                {{ $t('home.newRoom') }}
+                {{ $t('hero.newRoom') }}
               </b-button>
             </div>
           </div>
