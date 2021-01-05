@@ -1,6 +1,20 @@
+<div align="center" style="display:flex;flex-direction:column;">
+  <a href="https://ephemere.now.sh">
+    <img
+      src="https://raw.githubusercontent.com/ephemere-app/ephemere-branding/master/svg/banner.svg"
+      alt="Ephemere: Open a secure line"
+    />
+  </a>
+</div>
+
 # Ephemere
 
 > Open a secure line
+
+[![GitHub Tag](https://img.shields.io/github/tag/ephemere-app/ephemere.svg)](https://github.com/ephemere-app/ephemere/releases/latest)
+[![GitHub Action CI/CD](https://github.com/ephemere-app/ephemere/workflows/CI/CD/badge.svg)](https://github.com/ephemere-app/ephemere/actions?query=workflow%3A%22CI%2FCD%22)
+[![Coverage Status](https://img.shields.io/codecov/c/github/ephemere-app/ephemere)](https://codecov.io/gh/ephemere-app/ephemere)
+[![License](https://img.shields.io/github/license/ephemere-app/ephemere)](https://github.com/ephemere-app/ephemere/blob/master/LICENSE)
 
 End-to-end encrypted and ephemeral instant messaging app, where messages are
 never stored server-side and only resides within the user's app.
