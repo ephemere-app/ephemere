@@ -63,6 +63,7 @@ function createWrapper(
 
   const mocks = {
     $t: (msg: string) => msg,
+    localePath: (path: string) => path,
     ...optionalMocks,
   }
 
