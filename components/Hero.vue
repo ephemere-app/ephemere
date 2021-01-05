@@ -5,6 +5,10 @@
         <div class="columns">
           <div class="column is-half is-offset-one-quarter">
             <div class="has-text-centered">
+              <logo />
+
+              <br />
+
               <p class="title">
                 {{ $t('home.title') }}
               </p>
@@ -44,9 +48,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import { v4 as uuid4 } from 'uuid'
+import Logo from '~/components/Logo.vue'
 import * as crypto from '~/utils/crypto'
 
 export default Vue.extend({
+  components: {
+    Logo,
+  },
+
   data() {
     return {
       license: this.$t('common.app.license'),

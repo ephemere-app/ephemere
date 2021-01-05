@@ -1,9 +1,15 @@
 // brand colors
+$ephemere-red: #ff5555;
 
 // bulma initial variables
 
 // bulma derived variables
-$custom-colors: ();
+$custom-colors: (
+  'ephemere-red': (
+    $ephemere-red,
+    findColorInvert($ephemere-red)
+  )
+);
 
 // bulma component variables
 $dimensions: 16 24 32 48 64 96 128 256 512;

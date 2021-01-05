@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93334"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   inkscape:export-filename="/Users/romain/Documents/dev/ephemere/ephemere-branding/png/logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs42" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="63.277675"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:window-width="1252"
+     inkscape:window-height="855"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata45">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#ff5555;stroke-width:0.373922"
+       id="path56"
+       cx="135.46666"
+       cy="135.46666"
+       r="135.46666" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       aria-label="e"
+       id="text52"
+       style="font-style:normal;font-weight:normal;font-size:304.339px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5851">
+      <path
+         d="m 199.37785,179.29147 q -10.65186,16.12997 -26.47749,23.12977 -15.52129,6.99979 -34.3903,6.99979 -16.12997,0 -29.21655,-5.4781 -13.086573,-5.4781 -22.521081,-15.21695 -9.434509,-10.04318 -14.608272,-23.4341 -4.869424,-13.69525 -4.869424,-30.12956 0,-15.82563 5.173763,-29.21654 5.173763,-13.390917 14.608272,-23.129765 9.434508,-10.043187 22.216742,-15.521288 12.78224,-5.782441 28.30353,-5.782441 16.12997,0 28.30353,5.782441 12.47789,5.478101 20.69505,14.91261 8.52149,9.13017 12.78223,20.999393 4.26075,11.86922 4.26075,24.04278 v 12.78223 H 85.555073 q 0,5.78245 2.130373,14.91262 2.434711,8.82583 8.521491,17.34732 6.086783,8.52149 16.129963,14.60827 10.34753,6.08678 26.4775,6.08678 13.99959,0 27.08617,-6.69546 13.08657,-6.69546 20.08637,-18.26034 z m -13.99959,-55.69403 q 0,-9.43451 -3.95641,-17.65166 -3.65206,-8.217155 -10.34752,-14.303934 -6.39112,-6.391119 -15.52129,-10.043187 -8.82583,-3.652068 -18.86902,-3.652068 -14.91261,0 -24.95579,6.08678 -9.73885,6.08678 -15.521293,13.999593 -5.782441,7.912816 -8.217152,15.521286 -2.434712,7.30414 -2.434712,10.04319 z"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:304.339px;font-family:Avenir;-inkscape-font-specification:'Avenir Light';fill:#ffffff;stroke-width:1.5851"
+         id="path112" />
+    </g>
+  </g>
+</svg>

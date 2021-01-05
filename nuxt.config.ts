@@ -130,6 +130,12 @@ const config: NuxtConfig = {
       description: appDescription,
       theme_color: appColor,
       ogHost: hostname,
+      ogImage: {
+        path: '/preview.png',
+        width: 1280,
+        height: 640,
+      },
+      twitterCard: 'summary_large_image',
     },
     manifest: {
       name: appName,
