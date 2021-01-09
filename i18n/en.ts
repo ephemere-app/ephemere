@@ -1,9 +1,4 @@
 export default {
-  navbar: {
-    brand: 'Ephemere',
-    language: 'Language',
-  },
-
   credits: {
     made: 'Developed by {author}',
     powered: 'Powered by {nuxt}, {socketio}, {bulma} and {fontawesome}',
