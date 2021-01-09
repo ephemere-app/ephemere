@@ -145,9 +145,11 @@ describe('store/auth mutations', () => {
     room.mutations.pushChatMessage(state, newMessage)
 
     expect(state.chatMessages.length).toEqual(beforeMessages.length + 1)
-    expect(state.chatMessages[0]).toStrictEqual(newMessage)
+    expect(state.chatMessages[state.chatMessages.length - 1]).toStrictEqual(
+      newMessage
+    )
     beforeMessages.forEach((m, i) => {
-      expect(state.chatMessages[i + 1]).toStrictEqual(m)
+      expect(state.chatMessages[i]).toStrictEqual(m)
     })
   })
 })

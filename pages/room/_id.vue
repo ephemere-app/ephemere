@@ -1,25 +1,28 @@
 <template>
   <div>
-    <section class="hero is-fullheight">
-      <div class="hero-body is-align-items-flex-start">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-one-quarter">
-              <logo :size="64" />
-              <br />
-              <user-list />
-            </div>
+    <div class="columns px-3">
+      <div class="column is-3 has-background-light">
+        <logo :size="64" class="mt-5" />
+        <br />
+        <user-list />
+      </div>
 
-            <div class="column is-one-half">
-              <join-link v-model="link" />
-              <chat />
-            </div>
+      <div class="column is-6">
+        <div class="hero is-fullheight">
+          <div class="hero-head">
+            <join-link v-model="link" />
+          </div>
 
-            <div class="column is-one-quarter"></div>
+          <div class="hero-body is-align-items-flex-start scrollable">
+            <messages />
+          </div>
+
+          <div class="hero-foot">
+            <chat />
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <b-loading :is-full-page="true" :active="!connected" :can-cancel="false" />
   </div>
@@ -31,6 +34,7 @@ import { mapActions, mapState } from 'vuex'
 import Logo from '~/components/Logo.vue'
 import UserList from '~/components/UserList.vue'
 import JoinLink from '~/components/JoinLink.vue'
+import Messages from '~/components/Messages.vue'
 import Chat from '~/components/Chat.vue'
 
 export default Vue.extend({
@@ -38,6 +42,7 @@ export default Vue.extend({
     Logo,
     UserList,
     JoinLink,
+    Messages,
     Chat,
   },
 
@@ -80,3 +85,10 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style scoped>
+.scrollable {
+  overflow: hidden scroll;
+  height: 0;
+}
+</style>

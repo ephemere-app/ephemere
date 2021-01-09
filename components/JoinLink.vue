@@ -1,5 +1,5 @@
 <template>
-  <b-field :label="$t('join.share')">
+  <b-field :label="$t('join.share')" class="py-3">
     <p class="control">
       <b-tooltip :label="$t('join.secureLink')" type="is-dark">
         <span class="button is-static">

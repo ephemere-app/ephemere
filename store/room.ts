@@ -97,7 +97,7 @@ export const mutations: MutationTree<RoomState> = {
   },
 
   pushChatMessage: (state: RoomState, message: ChatMessage): void => {
-    state.chatMessages.unshift(message)
+    state.chatMessages.push(message)
   },
 }
 

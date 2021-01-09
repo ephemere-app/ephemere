@@ -8,26 +8,10 @@ import Chat from '~/components/Chat.vue'
 
 faker.seed(1234)
 
-function generateMessages() {
-  const messages = []
-  for (let i = 0; i < 4; ++i) {
-    messages.push({
-      username: faker.internet.userName(),
-      content: faker.lorem.sentence(),
-      datetime: faker.date.recent().toISOString(),
-    })
-  }
-
-  return messages
-}
-
 function createStoreModule() {
   return {
     room: {
       namespaced: true,
-      state: {
-        chatMessages: generateMessages(),
-      },
       actions: {
         sendChatMessage: jest.fn(),
       },
@@ -52,7 +36,6 @@ function createWrapper(component: Vue.VueConstructor<Vue>, storeModules = {}) {
 
   const mocks = {
     $t: (msg: string) => msg,
-    $d: (msg: Date) => msg,
   }
 
   const stubs = {}
@@ -66,30 +49,6 @@ function createWrapper(component: Vue.VueConstructor<Vue>, storeModules = {}) {
 }
 
 describe('components/chat', () => {
-  it('is a Vue instance', () => {
-    const storeModule = createStoreModule()
-    const wrapper = createWrapper(Chat, storeModule)
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-
-  it('can display messages in given order', () => {
-    const storeModule = createStoreModule()
-    const wrapper = createWrapper(Chat, storeModule)
-
-    storeModule.room.state.chatMessages.forEach((m, i) => {
-      const msgComp = wrapper.find(`article[data-message=message-${i}]`)
-
-      const username = msgComp.find('.content > p > strong')
-      expect(username.text()).toBe(m.username)
-
-      const datetime = msgComp.find('.content > p > small')
-      expect(datetime.text()).toBe(new Date(m.datetime).toString())
-
-      const content = msgComp.find('.content > p > br + span')
-      expect(content.text()).toBe(m.content)
-    })
-  })
-
   it('can send a new message with return key', async () => {
     const storeModule = createStoreModule()
     const wrapper = createWrapper(Chat, storeModule)
