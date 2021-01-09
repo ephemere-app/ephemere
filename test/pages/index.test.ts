@@ -9,6 +9,7 @@ function createWrapper(component: Vue.VueConstructor<Vue>) {
 
   const mocks = {
     $t: (msg: string) => msg,
+    $i18n: { locales: [] },
     localePath: (path: string) => path,
   }
 

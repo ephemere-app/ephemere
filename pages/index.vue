@@ -2,6 +2,7 @@
   <div>
     <hero />
     <features />
+    <credits />
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import Vue from 'vue'
 import Hero from '~/components/Hero.vue'
 import Features from '~/components/Features.vue'
+import Credits from '~/components/Credits.vue'
 
 export default Vue.extend({
   components: {
     Hero,
     Features,
+    Credits,
   },
 })
 </script>
