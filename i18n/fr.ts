@@ -1,7 +1,7 @@
 export default {
   credits: {
     made: 'Développé par {author}',
-    powered: 'Propulsé par {nuxt}, {socketio}, {bulma} et {fontawesome}',
+    powered: 'Propulsé par {nuxt}, {socketio}, {buefy} et {fontawesome}',
     e2ee: 'Données protégées par chiffrement bout-en-bout avec {tweetnacljs}',
     analytics: `Analyse d'utilisation respectueuse de la vie-privée grâce à {chiffre}`,
     website: 'Cette application web est ouverte sous licence {license}',

@@ -1,7 +1,7 @@
 export default {
   credits: {
     made: 'Developed by {author}',
-    powered: 'Powered by {nuxt}, {socketio}, {bulma} and {fontawesome}',
+    powered: 'Powered by {nuxt}, {socketio}, {buefy} and {fontawesome}',
     e2ee: 'All data are end-to-end encrypted with {tweetnacljs}',
     analytics: 'Privacy-first analytics tracking powered by {chiffre}',
     website:

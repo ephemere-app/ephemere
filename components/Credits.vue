@@ -28,9 +28,9 @@
               </a>
             </template>
 
-            <template #bulma>
-              <a :href="bulma.url" :title="bulma.name" :alt="bulma.name">
-                <span>{{ bulma.name }}</span>
+            <template #buefy>
+              <a :href="buefy.url" :title="buefy.name" :alt="buefy.name">
+                <span>{{ buefy.name }}</span>
               </a>
             </template>
 
@@ -139,7 +139,7 @@ export default Vue.extend({
       changelog: this.$t('common.app.changelog'),
       nuxt: this.$t('common.links.nuxt'),
       socketio: this.$t('common.links.socketio'),
-      bulma: this.$t('common.links.bulma'),
+      buefy: this.$t('common.links.buefy'),
       fontawesome: this.$t('common.links.fontawesome'),
       tweetnacljs: this.$t('common.links.tweetnacljs'),
       chiffre: this.$t('common.links.chiffre'),

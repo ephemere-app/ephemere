@@ -37,9 +37,9 @@ export default {
       name: 'Socket.IO',
       url: 'https://socket.io',
     },
-    bulma: {
-      name: 'Bulma',
-      url: 'https://bulma.io',
+    buefy: {
+      name: 'Buefy',
+      url: 'https://buefy.org/',
     },
     fontawesome: {
       name: 'FontAwesome',

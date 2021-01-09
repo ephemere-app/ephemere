@@ -24,7 +24,7 @@ Built using the following open-source projects:
 - [Nuxt.js](https://nuxtjs.org)
 - [Socket-io](https://socket.io)
 - [TweetNaCl.js](https://tweetnacl.js.org)
-- [Bulma](https://bulma.io)
+- [Buefy](https://buefy.org/)
 - [FontAwesome](https://fontawesome.com)
 
 ## Build Setup
