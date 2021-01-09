@@ -36,6 +36,8 @@ export default {
   },
 
   features: {
+    title: 'Features',
+    subtitle: 'Ephemere is one of a kind, check-it out!',
     messaging: {
       title: 'Messaging',
       text: `Ever needed to transmit a sensitive information easily to a colleague or a friend?

@@ -1,9 +1,16 @@
 <template>
   <section class="section hero is-fullheight has-background-light">
+    <div class="hero-head">
+      <div class="container">
+        <p class="title">{{ $t('features.title') }}</p>
+        <p class="subtitle">{{ $t('features.subtitle') }}</p>
+      </div>
+    </div>
+
     <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-one-half">
+          <div class="column is-4 is-offset-2">
             <p class="title">
               <b-icon pack="fas" icon="comments" />
               {{ $t('features.messaging.title') }}
@@ -22,7 +29,7 @@
             </i18n>
           </div>
 
-          <div class="column is-one-half">
+          <div class="column is-4">
             <p class="title">
               <b-icon pack="fas" icon="shield-alt" />
               {{ $t('features.privacy.title') }}
@@ -43,7 +50,7 @@
         </div>
 
         <div class="columns">
-          <div class="column is-one-half">
+          <div class="column is-4 is-offset-2">
             <p class="title">
               <b-icon pack="fas" icon="lock-open" />
               {{ $t('features.oss.title') }}
@@ -72,7 +79,7 @@
             </i18n>
           </div>
 
-          <div class="column is-one-half">
+          <div class="column is-4">
             <p class="title">
               <b-icon pack="fas" icon="envelope-open-text" />
               {{ $t('features.suggestions.title') }}

@@ -35,6 +35,9 @@ export default {
   },
 
   features: {
+    title: 'Fonctionnalités',
+    subtitle:
+      'Ephemere est ne fait pas les choses comme les autres, voyez par vous-même!',
     messaging: {
       title: 'Messagerie',
       text: `Déjà eu besoin de transmettre une information sensible simplement à un collègue ou un ami ?
