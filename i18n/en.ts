@@ -65,6 +65,12 @@ export default {
     },
   },
 
+  security: {
+    title: 'Security',
+    subtitle:
+      'Ephemere security model is based on a zero-knowledge architecture.',
+  },
+
   join: {
     secureLink: 'This connection is secured using end-to-end encryption',
     linkCopied: 'Link copied to clipboard',

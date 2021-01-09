@@ -65,6 +65,11 @@ export default {
     },
   },
 
+  security: {
+    title: 'Sécurité',
+    subtitle: `Le modèle de sécurité d'Ephemere est basé sur une architecture nulle de connaissance.`,
+  },
+
   join: {
     secureLink: 'Cette connexion est sécurisée par chiffrement bout-en-bout',
     linkCopied: 'Lien copié dans le presse-papier',
