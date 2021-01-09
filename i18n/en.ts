@@ -79,6 +79,7 @@ export default {
   },
 
   join: {
+    share: 'Share the link to this secure room',
     secureLink: 'This connection is secured using end-to-end encryption',
     linkCopied: 'Link copied to clipboard',
   },

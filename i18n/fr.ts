@@ -78,6 +78,7 @@ export default {
   },
 
   join: {
+    share: 'Partagez le lien vers ce salon sécurisé',
     secureLink: 'Cette connexion est sécurisée par chiffrement bout-en-bout',
     linkCopied: 'Lien copié dans le presse-papier',
   },
