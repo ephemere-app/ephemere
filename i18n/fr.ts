@@ -57,8 +57,8 @@ export default {
     },
     mobile: {
       title: 'Mobile',
-      text: `Ephemere est une application web complètement fonctionnelle sur mobile,
-      et même disponible comme une Progressive Web App (PWA). Powered by {nuxt}.`,
+      text: `Ephemere est une application web complètement fonctionnelle sur ordinateur et mobile,
+      et également disponible comme une Progressive Web App (PWA). Powered by {nuxt}.`,
     },
     oss: {
       title: 'Open-Source',
