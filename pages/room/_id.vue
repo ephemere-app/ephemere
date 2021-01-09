@@ -5,7 +5,7 @@
         <div class="container">
           <div class="columns">
             <div class="column is-one-quarter">
-              <logo size="64" />
+              <logo :size="64" />
               <br />
               <user-list />
             </div>
