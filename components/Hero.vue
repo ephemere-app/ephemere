@@ -9,7 +9,7 @@
 
               <br />
 
-              <p class="title">
+              <p class="title is-size-1">
                 {{ $t('hero.title') }}
               </p>
 

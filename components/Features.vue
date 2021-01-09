@@ -16,17 +16,45 @@
               {{ $t('features.messaging.title') }}
             </p>
 
-            <i18n path="features.messaging.text" tag="p">
-              <template #socketio>
-                <a
-                  :href="socketio.url"
-                  :title="socketio.name"
-                  :alt="socketio.name"
-                >
-                  <span>{{ socketio.name }}</span>
+            <p>{{ $t('features.messaging.text') }}</p>
+          </div>
+
+          <div class="column is-4">
+            <p class="title">
+              <b-icon pack="fas" icon="mobile-alt" />
+              {{ $t('features.mobile.title') }}
+            </p>
+
+            <i18n path="features.mobile.text" tag="p">
+              <template #nuxt>
+                <a :href="nuxt.url" :title="nuxt.name" :alt="nuxt.name">
+                  <span>{{ nuxt.name }}</span>
                 </a>
               </template>
             </i18n>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 is-offset-2">
+            <div class="mb-5">
+              <p class="title">
+                <b-icon pack="fas" icon="key" />
+                {{ $t('features.security.title') }}
+              </p>
+
+              <i18n path="features.security.text" tag="p">
+                <template #tweetnacljs>
+                  <a
+                    :href="tweetnacljs.url"
+                    :title="tweetnacljs.name"
+                    :alt="tweetnacljs.name"
+                  >
+                    <span>{{ tweetnacljs.name }}</span>
+                  </a>
+                </template>
+              </i18n>
+            </div>
           </div>
 
           <div class="column is-4">
@@ -36,13 +64,13 @@
             </p>
 
             <i18n path="features.privacy.text" tag="p">
-              <template #tweetnacljs>
+              <template #socketio>
                 <a
-                  :href="tweetnacljs.url"
-                  :title="tweetnacljs.name"
-                  :alt="tweetnacljs.name"
+                  :href="socketio.url"
+                  :title="socketio.name"
+                  :alt="socketio.name"
                 >
-                  <span>{{ tweetnacljs.name }}</span>
+                  <span>{{ socketio.name }}</span>
                 </a>
               </template>
             </i18n>
@@ -113,6 +141,7 @@ export default Vue.extend({
       repository: this.$t('common.app.repository'),
       socketio: this.$t('common.links.socketio'),
       tweetnacljs: this.$t('common.links.tweetnacljs'),
+      nuxt: this.$t('common.links.nuxt'),
     }
   },
 })

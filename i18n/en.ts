@@ -40,18 +40,25 @@ export default {
     subtitle: 'Ephemere is one of a kind, check-it out!',
     messaging: {
       title: 'Messaging',
-      text: `Ever needed to transmit a sensitive information easily to a colleague or a friend?
-      Create a secure room and simply share the link.
-      All messages are synchronized in real-time in a peer-to-peer fashion.
-      This means synchronization servers will never keep any data, only transmitting it.
-      Powered by {socketio}.`,
+      text: `Ever needed to transmit a sensitive information easily to a colleague or a friend,
+      with the guarantee not to leave a trace? Create a secure room with Ephemere and simply share the link.`,
     },
-    privacy: {
-      title: 'Privacy',
+    security: {
+      title: 'Security',
       text: `All messages are sent end-to-end encrypted over the wire,
       using "secret-key authenticated encryption" (XSalsa20-Poly1305).
       This means synchronization servers will never be able to see your data,
       even when transmitting it. Powered by {tweetnacljs}.`,
+    },
+    privacy: {
+      title: 'Privacy',
+      text: `All messages are synchronized in real-time and never stored on a server.
+      Close the secure room and all the messages disappear. Powered by {socketio}.`,
+    },
+    mobile: {
+      title: 'Mobile',
+      text: `Ephemere is a fully functional web application on mobile and is even available
+      as a Progressive Web Application (PWA). Powered by {nuxt}.`,
     },
     oss: {
       title: 'Open-Source',

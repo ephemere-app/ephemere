@@ -40,18 +40,25 @@ export default {
       'Ephemere est ne fait pas les choses comme les autres, voyez par vous-même!',
     messaging: {
       title: 'Messagerie',
-      text: `Déjà eu besoin de transmettre une information sensible simplement à un collègue ou un ami ?
-      Créez un salon sécurisé et partagez simplement le lien.
-      Tous les messages sont synchronisés en temps-réel et en pair-à-pair.
-      Les serveurs de synchronisation ne garderont aucune donnée, ils assurent seulement la transmission.
-      Propulsé par {socketio}.`,
+      text: `Déjà eu besoin de transmettre une information sensible simplement à un collègue ou un ami,
+      avec la garantie de ne laisser aucune trace ? Créez un salon sécurisé avec Ephemere et partagez simplement le lien.`,
     },
-    privacy: {
-      title: 'Vie privée',
+    security: {
+      title: 'Securité',
       text: `Tous les dessins et messages instantanés sont envoyés chiffrés bout-en-bout à travers le réseau,
       en utilisant la "cryptographie authentifiée à clé-secrète" (XSalsa20-Poly1305).
       En d'autres termes, les serveurs de synchronisation ne pourront jamais voir vos données,
       même lors de leur transmission. Propulsé par {tweetnacljs}.`,
+    },
+    privacy: {
+      title: 'Vie privée',
+      text: `Tous les messages sont synchronisés en temps-réel et jamais stockés sur un serveur.
+      Fermez le salon sécurisé et tous les messages disparaissent. Propulsé par {socketio}.`,
+    },
+    mobile: {
+      title: 'Mobile',
+      text: `Ephemere est une application web complètement fonctionnelle sur mobile,
+      et même disponible comme une Progressive Web App (PWA). Powered by {nuxt}.`,
     },
     oss: {
       title: 'Open-Source',
