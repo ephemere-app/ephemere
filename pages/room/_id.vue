@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="columns px-3">
+    <div class="columns mx-0">
       <div class="column is-3 has-background-light">
         <logo :size="64" class="mt-5" />
         <br />
