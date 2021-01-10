@@ -38,12 +38,6 @@ function generateProps() {
 describe('components/join-link', () => {
   HTMLElement.prototype.insertAdjacentElement = jest.fn()
 
-  it('is a Vue instance', () => {
-    const props = generateProps()
-    const wrapper = createWrapper(JoinLink, props)
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-
   it('can copy to clipboard and show notification', async () => {
     const props = generateProps()
     const wrapper = createWrapper(JoinLink, props)

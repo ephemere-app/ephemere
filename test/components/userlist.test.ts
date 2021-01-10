@@ -66,12 +66,6 @@ function createWrapper(component: Vue.VueConstructor<Vue>, storeModules = {}) {
 }
 
 describe('components/user-list', () => {
-  it('is a Vue instance', () => {
-    const storeModule = createStoreModule()
-    const wrapper = createWrapper(UserList, storeModule)
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-
   it('can display users in given order', () => {
     const storeModule = createStoreModule()
     const wrapper = createWrapper(UserList, storeModule)

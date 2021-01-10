@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { createLocalVue, mount } from '@vue/test-utils'
+import { RouterLinkStub, createLocalVue, mount } from '@vue/test-utils'
 import Buefy from 'buefy'
 import faker from 'faker'
 import FreeId from '~/pages/room/_id.vue'
@@ -67,7 +67,9 @@ function createWrapper(
     ...optionalMocks,
   }
 
-  const stubs = {}
+  const stubs = {
+    NuxtLink: RouterLinkStub,
+  }
 
   return mount(component, {
     localVue,
@@ -78,16 +80,6 @@ function createWrapper(
 }
 
 describe('pages/free-id', () => {
-  it('is a Vue instance', () => {
-    const room = generateRoom()
-    const encryptionKey = generateEncryptionKey()
-    const routeMock = createRouteMock(room, encryptionKey)
-    const storeModule = createStoreModule()
-
-    const wrapper = createWrapper(FreeId, storeModule, routeMock)
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-
   it('connects when mounting and disconnects when destroying', () => {
     const room = generateRoom()
     const encryptionKey = generateEncryptionKey()
