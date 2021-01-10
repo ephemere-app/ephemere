@@ -1,5 +1,5 @@
 <div align="center" style="display:flex;flex-direction:column;">
-  <a href="https://ephemere.now.sh">
+  <a href="https://ephemere.app">
     <img
       src="https://raw.githubusercontent.com/ephemere-app/ephemere-branding/master/svg/banner.svg"
       alt="Ephemere: Open a secure line"
@@ -26,6 +26,10 @@ Built using the following open-source projects:
 - [TweetNaCl.js](https://tweetnacl.js.org)
 - [Buefy](https://buefy.org/)
 - [FontAwesome](https://fontawesome.com)
+
+## Try it now
+
+Go to [ephemere.app](https://ephemere.app) to start sending ephemeral messages!
 
 ## Build Setup
 
