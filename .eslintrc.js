@@ -6,4 +6,5 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   plugins: ['prettier'],
+  ignorePatterns: ['**/sw.js'],
 }
