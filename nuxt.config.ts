@@ -14,6 +14,7 @@ const appColor = appCommon.color
 const appEnvironment = process.env.APP_ENVIRONMENT || process.env.NODE_ENV
 const baseUrl = process.env.BASE_URL || ''
 const baseProtocol = process.env.BASE_PROTOCOL || 'https'
+const boxUrl = process.env.BOX_URL || ''
 const syncUrl = process.env.SYNC_URL || ''
 const chiffrePublicKey = process.env.CHIFFRE_PUBLIC_KEY || ''
 const chiffreProjectId = process.env.CHIFFRE_PROJECT_ID || ''
@@ -31,6 +32,7 @@ const config: NuxtConfig = {
   env: {
     APP_VERSION: appVersion,
     HOSTNAME: hostname,
+    BOX_URL: boxUrl,
     SYNC_URL: syncUrl,
   },
 
@@ -68,6 +70,7 @@ const config: NuxtConfig = {
     'nuxt-chiffre',
     'nuxt-i18n',
     'nuxt-buefy',
+    '@nuxtjs/axios',
     '@nuxtjs/sentry',
     '@nuxtjs/pwa',
     '@nuxtjs/robots',

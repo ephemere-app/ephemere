@@ -11,6 +11,7 @@ import {
   faPaperPlane,
   faShareAlt,
   faShieldAlt,
+  faStopwatch,
   faUserSecret,
   faUserShield,
 } from '@fortawesome/free-solid-svg-icons'
@@ -28,6 +29,7 @@ library.add(
   faPaperPlane,
   faShareAlt,
   faShieldAlt,
+  faStopwatch,
   faUserSecret,
   faUserShield,
   faGithub

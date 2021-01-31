@@ -28,6 +28,7 @@
       "@types/jest",
       "@nuxt/types",
       "@nuxt/vue-app",
+      "@nuxtjs/axios",
       "nuxt-i18n",
       "buefy/types"
     ]

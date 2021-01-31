@@ -33,6 +33,20 @@ export default {
     subtitle: 'Open a secure line',
     newRoom: 'New room',
     tagline: `End-to-end encrypted and ephemeral instant messaging app, where messages are never stored server-side and only resides within the user's app.`,
+    message: {
+      placeholder: 'Sensitive information',
+      expires: {
+        placeholder: 'Expiration time',
+        oneMinute: '1 minute',
+        fiveMinutes: '5 minutes',
+        fifteenMinutes: '15 minutes',
+        oneHour: '1 hour',
+        oneDay: '1 day',
+        twoDays: '2 days',
+        oneWeek: '1 week',
+      },
+      send: 'Send',
+    },
   },
 
   features: {
