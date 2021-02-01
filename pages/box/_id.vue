@@ -94,11 +94,11 @@ export default Vue.extend({
 
   methods: {
     async getData(boxId: string, encryptionKey: string): Promise<void> {
-      const url = `${process.env.BOX_URL}/box/${boxId}`
+      const url = `/api/box/${boxId}`
       const res = await this.$axios.$get(url).catch(() => null)
       if (res) {
         this.message = crypto.decrypt(res.data.content, encryptionKey)
-        this.expiresAt = res.data.expires_at
+        this.expiresAt = res.data.expireAt
         this.updateExpiration()
         this.timer = window.setInterval(this.updateExpiration, 1000)
       }

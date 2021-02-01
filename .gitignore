@@ -89,3 +89,6 @@ dist
 
 # CNAME
 CNAME
+
+# Docker
+.docker/

@@ -60,6 +60,8 @@ const config: NuxtConfig = {
 
   plugins: ['~/plugins/clipboard.ts', '~/plugins/font-awesome.ts'],
 
+  serverMiddleware: [{ path: '/api', handler: '~/server-middleware/api.ts' }],
+
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/eslint-module',

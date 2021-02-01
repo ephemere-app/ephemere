@@ -132,12 +132,12 @@ export default Vue.extend({
       const content = crypto.encrypt(this.message, key)
 
       try {
-        const url = `${process.env.BOX_URL}/box`
+        // const url = `${process.env.BOX_URL}/box`
         const params = {
           content,
-          expires_in: this.expires,
+          expireIn: this.expires,
         }
-        const res = await this.$axios.$post(url, params)
+        const res = await this.$axios.$post('/api/box', params)
         this.$router.push(
           this.localePath({
             name: 'box-id',
