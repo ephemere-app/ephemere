@@ -74,7 +74,7 @@
                 </p>
               </b-field>
 
-              <b-button
+              <!-- <b-button
                 type="is-link"
                 icon-pack="fas"
                 icon-left="paper-plane"
@@ -89,7 +89,7 @@
                 outlined
               >
                 {{ $t('hero.newRoom') }}
-              </b-button>
+              </b-button> -->
             </div>
           </div>
         </div>
@@ -132,7 +132,6 @@ export default Vue.extend({
       const content = crypto.encrypt(this.message, key)
 
       try {
-        // const url = `${process.env.BOX_URL}/box`
         const params = {
           content,
           expireIn: this.expires,

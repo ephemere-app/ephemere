@@ -21,7 +21,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "build:analyze": "nuxt-ts build --analyze",
-    "generate": "nuxt-ts generate",
+    "generate": "nuxt-ts generate --target static",
     "start": "nuxt-ts start",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",

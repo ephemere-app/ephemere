@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/api/box(.*)", "dest": "/api/box.ts" },
+    { "src": "/(.*)", "dest": "/404.html" }
+  ]
+}

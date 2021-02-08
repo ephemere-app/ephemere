@@ -5,9 +5,9 @@ import Redis from 'ioredis'
 
 const environment = process.env.NODE_ENV
 const production = environment === 'production'
-const redisDsn = process.env.REDIS_DSN || ''
+const redisUrl = process.env.REDIS_URL || ''
 
-const client = new Redis(redisDsn)
+const client = new Redis(redisUrl)
 const api = express()
 
 enum ExpirationDuration {
@@ -84,7 +84,7 @@ api.use(function cleverCloudMonitoring(req, res, next) {
   next()
 })
 
-api.post('/box', async (req, res) => {
+api.post('/api/box', async (req, res) => {
   const boxExpireAt = expiration(req.body.expireIn)
   const boxExpireTs = Math.floor(boxExpireAt.getTime() / 1000)
   const boxId = uuid4()
@@ -95,20 +95,17 @@ api.post('/box', async (req, res) => {
   }
 
   await client.set(boxKey, JSON.stringify(boxValue))
-  await client.expireat(boxId, boxExpireTs)
+  await client.expireat(boxKey, boxExpireTs)
 
   res.status(200).json({ id: boxId })
 })
 
-api.get('/box/:boxId', async (req, res) => {
+api.get('/api/box/:boxId', async (req, res) => {
   const boxId = req.params.boxId
   const boxKey = `box:${boxId}`
   const boxValue = await client.get(boxKey)
   if (boxValue) {
-    return res.status(200).json({
-      id: boxId,
-      data: JSON.parse(boxValue),
-    })
+    return res.status(200).json(JSON.parse(boxValue))
   }
 
   return res.status(404).json({

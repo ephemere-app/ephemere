@@ -92,3 +92,4 @@ CNAME
 
 # Docker
 .docker/
+.vercel

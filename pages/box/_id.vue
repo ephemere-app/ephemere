@@ -97,8 +97,8 @@ export default Vue.extend({
       const url = `/api/box/${boxId}`
       const res = await this.$axios.$get(url).catch(() => null)
       if (res) {
-        this.message = crypto.decrypt(res.data.content, encryptionKey)
-        this.expiresAt = res.data.expireAt
+        this.message = crypto.decrypt(res.content, encryptionKey)
+        this.expiresAt = res.expireAt
         this.updateExpiration()
         this.timer = window.setInterval(this.updateExpiration, 1000)
       }
