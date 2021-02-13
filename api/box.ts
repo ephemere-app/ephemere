@@ -8,7 +8,6 @@ const production = environment === 'production'
 const redisUrl = process.env.REDIS_URL || ''
 
 const client = new Redis(redisUrl)
-const api = express()
 
 enum ExpirationDuration {
   oneMinute = '1m',
@@ -75,14 +74,9 @@ function expiration(expiration: string): Date {
   return exp
 }
 
+const api = express()
 api.set('trust proxy', production)
 api.use(bodyParser.json())
-api.use(function cleverCloudMonitoring(req, res, next) {
-  if (req.header('X-CleverCloud-Monitoring') === 'telegraf') {
-    return res.sendStatus(200)
-  }
-  next()
-})
 
 api.post('/api/box', async (req, res) => {
   const boxExpireAt = expiration(req.body.expireIn)
