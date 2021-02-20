@@ -73,23 +73,6 @@
                   />
                 </p>
               </b-field>
-
-              <!-- <b-button
-                type="is-link"
-                icon-pack="fas"
-                icon-left="paper-plane"
-                :to="
-                  localePath({
-                    name: 'room-id',
-                    params: { id: generateRoomId() },
-                    hash: `#${generateRoomKey()}`,
-                  })
-                "
-                tag="nuxt-link"
-                outlined
-              >
-                {{ $t('hero.newRoom') }}
-              </b-button> -->
             </div>
           </div>
         </div>
@@ -106,7 +89,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { v4 as uuid4 } from 'uuid'
 import Logo from '~/components/Logo.vue'
 import * as crypto from '~/utils/crypto'
 
@@ -158,14 +140,6 @@ export default Vue.extend({
         message: this.$t('hero.message.failure') as string,
         type: 'is-danger',
       })
-    },
-
-    generateRoomId(): string {
-      return uuid4()
-    },
-
-    generateRoomKey(): string {
-      return crypto.generateKey()
     },
   },
 })

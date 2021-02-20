@@ -69,7 +69,6 @@ jobs:
       APP_ENVIRONMENT: ${{ secrets.APP_ENVIRONMENT_PREVIEW }}
       BASE_PROTOCOL: ${{ secrets.BASE_PROTOCOL }}
       BASE_URL: ${{ secrets.BASE_URL_PREVIEW }}
-      SYNC_URL: ${{ secrets.SYNC_URL_PREVIEW }}
       CHIFFRE_PUBLIC_KEY: ""
       CHIFFRE_PROJECT_ID: ""
       SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
@@ -105,7 +104,6 @@ jobs:
       APP_ENVIRONMENT: ${{ secrets.APP_ENVIRONMENT }}
       BASE_PROTOCOL: ${{ secrets.BASE_PROTOCOL }}
       BASE_URL: ${{ secrets.BASE_URL }}
-      SYNC_URL: ${{ secrets.SYNC_URL }}
       CHIFFRE_PUBLIC_KEY: ${{ secrets.CHIFFRE_PUBLIC_KEY }}
       CHIFFRE_PROJECT_ID: ${{ secrets.CHIFFRE_PROJECT_ID }}
       SENTRY_DSN: ${{ secrets.SENTRY_DSN }}

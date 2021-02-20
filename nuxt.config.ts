@@ -14,7 +14,6 @@ const appColor = appCommon.color
 const appEnvironment = process.env.APP_ENVIRONMENT || process.env.NODE_ENV
 const baseUrl = process.env.BASE_URL || ''
 const baseProtocol = process.env.BASE_PROTOCOL || 'https'
-const syncUrl = process.env.SYNC_URL || ''
 const chiffrePublicKey = process.env.CHIFFRE_PUBLIC_KEY || ''
 const chiffreProjectId = process.env.CHIFFRE_PROJECT_ID || ''
 const sentryDsn = process.env.SENTRY_DSN || ''
@@ -30,7 +29,6 @@ const config: NuxtConfig = {
   env: {
     APP_VERSION: appVersion,
     HOSTNAME: hostname,
-    SYNC_URL: syncUrl,
   },
 
   loading: { color: '#fff' },
