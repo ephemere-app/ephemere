@@ -55,7 +55,7 @@
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@types/faker": "^5.1.6",
+    "@types/faker": "^5.1.7",
     "@types/jest": "^26.0.20",
     "@types/socket.io": "^2.1.13",
     "@types/socket.io-client": "^1.4.35",
