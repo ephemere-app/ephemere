@@ -39,7 +39,7 @@
     "@nuxtjs/sentry": "^5.0.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.15.1",
-    "nuxt-buefy": "^0.4.4",
+    "nuxt-buefy": "^0.4.10",
     "nuxt-chiffre": "^0.3.0",
     "nuxt-i18n": "^6.20.2",
     "socket.io": "^3.1.1",
